@@ -20,10 +20,10 @@ jobs:
     - name: Build with Maven
       run: mvn compile
 
-security-check:
-  runs-on: ubuntu-latest
+  security-check:
+    runs-on: ubuntu-latest
 
-   steps:
+     steps:
     - uses: actions/checkout@v4
     - name: trivy installation
       run: |
